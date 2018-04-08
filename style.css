@@ -4,10 +4,11 @@ body {
 .nav{
 	width:100%;
 	height:12vh;
-	border:1px solid red;
+	/*border:1px solid red;*/
 	position: relative;
 	display: inline-block;
 }
+
 
 img{
 	max-height: 100%;
@@ -70,16 +71,58 @@ text-decoration: none;
 }
 
 #home, #Couple{
-	height: 87vh;
+	height: auto;
 	margin-top: 10px;
 	width: 100%;
 	position: relative;
-	border:1px dotted blue;
-	background-color: #c5cfe0;
+	/*border:1px dotted blue;*/
+	background-color: #f4f4f4;
+}
+.name{
+	color: #f9667e;
+}
 
+.img-circle{
+	border-radius: 50%;
+	border: 20px solid #FFF;
+}
+.img-res{
+	    display: block;
+	    width: 363px;
+	    height: 363px;
+   		max-width: 100%;
+}
+
+.profile img{
+	margin:40px auto;
 }
 
 #Couple{
 	background-color: #44cfe0;
 	
+}
+.social-icons {
+    margin: 27px auto;
+}
+
+.social-icons a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.7em;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    margin: 5px;
+    border: 4px solid #7b7571;
+    background: #7b7571;
+}
+.social-icons a:hover {
+    color: #f9667e;
 }
