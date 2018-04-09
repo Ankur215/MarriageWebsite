@@ -9,7 +9,6 @@ body {
 	display: inline-block;
 }
 
-
 img{
 	max-height: 100%;
 	max-width:100%;
@@ -92,6 +91,11 @@ text-decoration: none;
 	    height: 363px;
    		max-width: 100%;
 }
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .profile img{
 	margin:40px auto;
@@ -138,6 +142,12 @@ text-decoration: none;
     padding: 60px 0px;
     height: 300px;
 }
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .couple-title{
 	font-size: 53px;
 }
@@ -152,4 +162,49 @@ text-decoration: none;
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+}
+.bg-gray-1 {
+    background-color: #f4f4f4;
+}
+.title-block .divider {
+    border-bottom: solid 2px #f9667e;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.gallery_product {
+    margin-bottom: 30px;
+}
+.featured, .featured-right .featured {
+    text-align: center;
+}
+.featured img, .featured-right .featured img {
+    float: none;
+    margin: auto;
+}
+.featured-right .featured img {
+    float: left;
+    margin-right: 10px;
+}
+@media (max-width: 1199px) {
+.featured img, .featured-right .featured img {
+    float: none;
+    margin: auto;
+}
+}
+
+.featured img {
+    margin: 0px;
+    float: right;
+    width: 200px;
+    border: 10px solid #FFF!important;
+    margin-left: 10px;
+}
+
+@media (max-width: 1199px){
+.featured img, .featured-right .featured img {
+    float: none;
+    margin: auto;
+}
 }
