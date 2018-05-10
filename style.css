@@ -338,7 +338,7 @@ ul.names li {
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
 }
-.timeline > li > .timeline-badge, .timeline > li > .timeline-end > .timeline-badge {
+ .timeline > li > .timeline-end > .timeline-badge {
     background-color: #f9667e;
 }
 .final-frase {
