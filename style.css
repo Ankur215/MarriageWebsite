@@ -208,3 +208,143 @@ text-decoration: none;
     margin: auto;
 }
 }
+.img-bg-5{
+	background: url("image/couple.jpg") no-repeat; 
+}
+section#footer ul.names {
+    font-size: 43px;
+}
+ul.names {
+    list-style: none;
+    display: inline;
+    font-size: 100px;
+    font-weight: 300;
+    padding: 0px;
+}
+section#footer .circle {
+    width: 64px;
+    height: 64px;
+    font-size: 41px;
+    line-height: 1.5em;
+    top: 0px;
+}
+.circle{
+    background: #f9667e;
+}
+ul.names li {
+    display: inline-block;
+}
+.circle {
+    background: #F9667E;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 63px;
+    font-weight: normal;
+    line-height: 1.5em;
+    border-radius: 100px;
+    margin: 0px;
+    color: #FFF;
+    top: -15px;
+    position: relative;
+}
+.title-block {
+    margin: 0px auto 70px auto;
+    text-align: center;
+}
+.title-block h1 {
+    font-size: 53px;
+}
+.title-block p {
+    font-size: 18px;
+}
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+.timeline > li:first-child > .timeline-badge {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+}
+.timeline > li > .timeline-panel {
+    width: 46%;
+    float: left;
+    border-radius: 2px;
+    padding: 20px 20px 50px 20px;
+    position: relative;
+    background: transparent;
+    border: 3px solid #ededed;
+}
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+.timeline > li:first-child {
+    margin-top: -27px;
+}
+.timeline > li:first-child > .timeline-badge {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.timeline > li > .timeline-panel {
+    width: 46%;
+    float: left;
+    border-radius: 2px;
+    padding: 20px 20px 50px 20px;
+    position: relative;
+    background: transparent;
+    border: 3px solid #ededed;
+}
+.timeline > li .timeline-heading .timeline-title {
+    text-align: right;
+}
+.timeline > li.timeline-inverted .timeline-heading .timeline-title {
+    text-align: left;
+}
+.timeline > li {
+    margin-top: -25%;
+}
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #f9667e;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+ .timeline > li > .timeline-end > .timeline-badge {
+    background-color: #f9667e;
+}
+.final-frase {
+    font-size: 28px;
+    margin-top: 20px;
+}
+.timeline-body img {
+    margin: 30px auto;
+}
