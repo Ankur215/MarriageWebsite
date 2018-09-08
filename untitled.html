@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shah's Marriage</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style type="text/css">
+	
+		.backgroundContainer{
+		  width:98%;
+		  margin-left:1%;
+		  margin-top: 2%;
+		  height:95vh;
+		  border-radius: 4%;
+		  background-image:url('image/B1.jpg');
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  border:12px solid #f9667e;
+		}
+
+		.book{
+		  top: 50%;
+		  transform: translateY(-50%);
+		  position:relative;
+		  margin:0 auto;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-image:url('image/4.jpeg');
+		  border-radius:4%; 
+		  border:8px solid #f9667e;
+		  width:80%;
+		  height:80%;
+		}
+
+		.bookpage_right{
+		position: absolute;
+	    left: 50%;
+	    margin-top: 2%;
+	    margin: 0 auto;
+	    border: 4px solid #f9667e;
+	    width: 49%;
+	    margin-bottom: 0.5%;
+	    background-image: url(image/couple.jpg);
+	    background-size: cover;
+		background-repeat: no-repeat;
+	    height: 98%;
+	    margin-top: 0.5%;
+	    border-top-right-radius: 5%;
+	    border-bottom-right-radius: 5%;
+	    animation: fadein 4s;
+	    border-left:5px dotted  black;
+		  /*border-top:5px solid blue;
+		  border-bottom:5px solid blue;
+		  
+		  border-right: 15px solid blue: */
+		} 
+		.right {
+		 position: absolute;
+	    left: 50%;
+	    margin-top: 2%;
+	    margin: 0 auto;
+	    border: 4px solid #f9667e;
+	    width: 49%;
+	    margin-bottom: 0.5%;
+	    height: 98%;
+	    margin-top: 0.5%;
+	    border-top-right-radius: 5%;
+	    border-bottom-right-radius: 5%;
+		transform-origin:0% 50%;
+		animation-delay: 15s;
+		animation:flip 5s 1 linear;
+		animation-fill-mode:forwards;
+		
+		transition: opacity 2s ease-in;
+		} 
+
+		@keyframes fadein {
+			0% {
+				opacity: 0;
+			}
+
+			20% {
+				opacity: 0.1;
+			}
+			50% {
+				opacity: 0.5;
+			}
+			60% {
+				opacity: 0.7;
+			}
+			100% {
+				opacity: 1;
+			}
+            /*from { opacity: 0; }
+            to   { opacity: 1; }*/
+        }
+
+		@keyframes flip {
+		  0%{
+		      transform: perspective( 600px )
+		      rotateY( -0deg );
+		  }
+		  
+		  20%{
+		    background-image:url('image/couple2.jpg');
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		  }
+		  
+		  30%{
+		      transform: perspective( 1500px )
+		      rotateY( -90deg );
+		      background-image:url('image/couple2.jpg');
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		  }
+		  
+		  50%{
+		    opacity:0;
+		  }
+		  55%{
+		    opacity:1;
+		  }
+		  
+		  60%{
+		    transform: perspective( 1500px )
+		    rotateY( -180deg );
+		    background-image:url('image/couple2.jpg');
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		  }
+		  
+		  100%{
+		    transform: perspective( 1500px )
+		    rotateY( -180deg );
+		    background-image:url('image/couple2.jpg');
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    border-left: 5px dotted black;
+		    
+		  }
+		}
+</style>
+</head>
+<body>
+<div class="container backgroundContainer">
+		<div class="book ">
+			<div class="bookpage_right">
+	  			
+	  		</div>
+	  		<div class="right"></div>
+	  		
+		</div>
+</div>
+
+<script type="text/javascript">
+	
+</script>
+
+</body>
+</html>
