@@ -163,6 +163,24 @@ text-decoration: none;
     padding: 20px 0 20px;
     position: relative;
 }
+.timeline::before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.09);
+    left: 50%;
+    margin-left: -1.5px;
+}
+.timeline > li::first-child {
+    margin-top: -27px;
+}
+.timeline > li:before, .timeline > li:after {
+    content: " ";
+    display: table;
+}
+
 .bg-gray-1 {
     background-color: #f4f4f4;
 }
@@ -298,6 +316,18 @@ ul.names li {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.fa-heart::before {
+    content: "\f004";
+}
+.text-center {
+    text-align: center;
+}
+
+.timeline > li:first-child > .timeline-badge {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+}
 .timeline > li > .timeline-panel {
     width: 46%;
     float: left;
@@ -306,6 +336,18 @@ ul.names li {
     position: relative;
     background: transparent;
     border: 3px solid #ededed;
+}
+
+.timeline > li > .timeline-panel::before {
+    position: absolute;
+    top: 24px;
+    right: -18px;
+    display: inline-block;
+    border-top: 17px solid transparent;
+    border-left: 17px solid #e8e8e8;
+    border-right: 0 solid #e8e8e8;
+    border-bottom: 18px solid transparent;
+    content: " ";
 }
 .timeline > li .timeline-heading .timeline-title {
     text-align: right;
@@ -319,6 +361,12 @@ ul.names li {
 .timeline > li {
     margin-bottom: 20px;
     position: relative;
+}
+.timeline > li.timeline-inverted > .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
 }
 .timeline > li > .timeline-badge {
     color: #fff;
@@ -370,6 +418,19 @@ canvas {
 .time_circles > div {
     position: absolute;
     text-align: center;
+}
+.fright {
+    float: right !important;
+}
+.timeline::before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.09);
+    left: 50%;
+    margin-left: -1.5px;
 }
 .time_circles > div > span {
     display: block;
