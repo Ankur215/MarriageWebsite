@@ -7,23 +7,43 @@
 	</head>
 <body>
 	<div class="container backgroundContainer">
-		<div class="row">
-			<div class="col-lg-1 col-md-1"></div>
-			<p class="logo col-lg-4 col-md-4">
-				<img src="image/a1.png" class="img-rounded"> 
+		<div class="row headerDiv">
+			<p class="logo col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				<a href="home.html">
+					<img src="image/a1.png" class="img-rounded"> 
+				</a>
 			</p>
-			<div class="col-lg-3 col-md-3"></div>
-			<div class="Ganpati col-lg-4 col-md-4 " > </div>
+			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7"></div>
+			<div class="Ganpati col-lg-1 col-md-1 col-sm-1 col-xs-1"> </div>
+			
+		</div>
+		<div class="row bookDiv">
+			<div class="col-lg-1 col-md-1"></div>
+			<a id="SA" href="#" >
+				<div class="bookpage_right col-lg-5 col-md-5"> </div>
+			</a>
+			<div class="col-lg-1 col-md-1"></div>
+			<a id="PA" href="#">
+				<div class="right col-lg-5 col-md-5"></div>
+			</a>
+		</div>
+		<div class="container">
+		<div class="row namesDiv">
+			
+			<div class="col-lg-4 col-md-4 names textStyle ">Palak weds Ankur</div>
+			<div class="col-lg-4 col-md-4"> </div>
+			<div class="col-lg-4 col-md-4 names textStyle" style="margin-left: 70%">Akhil weds Shivani</div>
 		</div>
 
-		<div class="row">
-			<a href="ShivaniAkhil.html">
-				<div class="bookpage_right"> </div>
-			</a>
-			<a href="PalakAnkur.html">
-				<div class="right"></div>
-			</a>
-		</div>
 	</div>
+	</div>
+<script type="text/javascript">
+    setTimeout(function() { 
+    	var PA=document.getElementById('PA');
+    	var SA=document.getElementById('SA');
+    	PA.setAttribute("href", "PalakAnkur.html");
+    	SA.setAttribute("href", "ShivaniAkhil.html");
+    	 }, 6000);
+</script>
 </body>
 </html>
