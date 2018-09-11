@@ -1,8 +1,10 @@
-body {
+body{
+    background-repeat: no-repeat;
     color: #7b7571;
-}
-.row {
-    border:1px solid black;
+    background: url(../image/palkur.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 .logo {
     height: 70px;
@@ -114,7 +116,6 @@ img {
 .img-bg-2{
 	background-image: url("../image/couple.jpg") no-repeat;
     background-attachment: fixed;
-    opacity: 0.35;
     background-size: cover;
     color: #FFF;
     padding: 60px 0px;
@@ -159,6 +160,26 @@ img {
 }
 .title-block .divider {
     border-bottom: solid 2px #f9667e;
+}
+
+.img-bg-3 {
+    background-image: url("../image/couple2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.counterDiv {
+    top: 24px !important;
+    left: 0px;
+    height: 135px;
+    width: 135px !important;
+    border: 8px dotted #f9667e;
+    border-radius: 50%;
+}
+
+.counterH4 {
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 36px !important;
 }
 
 .gallery_product {
@@ -295,7 +316,7 @@ ul.names li {
 
 .timeline > li:first-child > .timeline-badge {
     position: absolute;
-    top: 1%;
+    top: 2%;
     left: 50%;
 }
 .timeline > li > .timeline-panel {
@@ -388,6 +409,7 @@ canvas {
 .time_circles > div {
     position: absolute;
     text-align: center;
+    color: white;
 }
 .fright {
     float: right !important;
