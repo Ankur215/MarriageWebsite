@@ -4,7 +4,19 @@ body{
     background: url(../image/palkur.jpg);
     background-attachment: fixed;
     background-size: cover;
-
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%;
+}
+.sticky + .container {
+  padding-top: 300px;
+}
+.header {
+    background-color: black;
+    color: white;
+    overflow: hidden;
 }
 .logo {
     height: 70px;
