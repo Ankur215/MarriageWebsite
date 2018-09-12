@@ -172,8 +172,9 @@ img {
     left: 0px;
     height: 135px;
     width: 135px !important;
-    border: 8px dotted #f9667e;
+    border: 8px dotted white;
     border-radius: 50%;
+    background: #f9667e;
 }
 
 .counterH4 {
