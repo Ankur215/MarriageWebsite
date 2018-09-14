@@ -8,15 +8,20 @@ body{
 .sticky {
   position: fixed;
   top: 0;
-  width: 90%;
+  
 }
-.sticky + .container {
-  padding-top: 300px;
+.sticky + .conte {
+  z-index:998px;
 }
 .header {
-    background-color: black;
+    background-color: #777;
     color: white;
-    overflow: hidden;
+    z-index :998;
+    position: fixed;
+    
+}
+#myheader {
+    z-index: 1200px;
 }
 .logo {
     height: 70px;
@@ -34,7 +39,7 @@ li {
 }
 
 #menuBar{
-    color:#777;
+    color: #f4f4f4;
 }
  
 img {
@@ -51,7 +56,7 @@ img {
 
 #nav > li a::after {
     content: "/";
-    color:#777;
+    color: #f4f4f4 !important;
     padding-left: 10px;
     color: rgba(0, 0, 0, 0.2);
 }
@@ -121,7 +126,7 @@ img {
     border: 4px solid #7b7571;
     background: #7b7571;
 }
-.social-icons a:hover, .quoteColor, #menuBar:hover, h1 span{
+.social-icons a:hover, a:active, .quoteColor, #menuBar:hover, h1 span{
     color: #f9667e;
     text-decoration: none;
 }
