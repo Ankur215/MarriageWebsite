@@ -1,6 +1,7 @@
 body{
     background-repeat: no-repeat;
     color: #7b7571;
+    border: 12px dotted #f9667e;
     background: url(../image/palkur.jpg);
     background-attachment: fixed;
     background-size: cover;
