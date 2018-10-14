@@ -8,15 +8,17 @@
 .headerDiv, .namesDiv {
 	height: 15%;
 	width: 99%;
-	margin-top: 30px;
+	margin-top: 1%;
+}
+
+.namesDiv {
+	margin-top: 0;
 }
 
 .names {
 	animation-delay: 6s;
 	color: black;
 	opacity: 0%;
-	margin-top: -57px;
-	margin-left: 125px;
 	animation:name 6s 1 linear;
     animation-fill-mode: forwards;
 }
@@ -38,7 +40,7 @@
 
 .font-header {
 	color: lightgoldenrodyellow;
-    font-size: 40px;
+    font-size: 48px;
     font-family: cursive;
     text-shadow: 5px 0 black, 0 1px black, 1px 0 blue, 0 -1px red;
 }
@@ -46,7 +48,7 @@
 .bookDiv {
 	height: 69%;
 	width:99%;
-	margin-top: 54px;
+	margin-top: 2%;
 }
 
 .backgroundContainer{
@@ -54,9 +56,9 @@
   width:98%;
   margin-left:1%;
   margin-top: 1%;
-  height:95vh;
+  height:97vh;
   border-radius: 4%;
-  background-image:url('../image/b16.png');
+  background-image:url('../image/b17.png');
   /*background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +134,7 @@
 	border-top-right-radius: 5%;
 	border-bottom-right-radius: 5%;
 	transform-origin: 0% 50%;
-	animation: flip 6s 3 linear;
+	animation: flip 6s 1 linear;
 	animation-fill-mode:forwards;
 	transition: opacity 2s ease-in;
 	animation-delay: 3s;
@@ -190,7 +192,6 @@ img {
     border-radius: 27%;
 }
 .Ganpati {
-	margin-left: 64%;
     height: 100px;
     width: 100px;
     border-radius: 50%;

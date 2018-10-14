@@ -8,43 +8,47 @@
 <body>
 	<div class="container backgroundContainer">
 		<div class="row headerDiv">
-			<p class="logo col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<p class="logo col-lg-5 col-md-5 col-sm-3 col-xs-3">
 				<a href="home.html">
 					<img src="image/a1.png" class="img-rounded"> 
 				</a>
 			</p>
-			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 font-header">
+			<div class="col-lg-5 col-md-5 col-sm-7 col-xs-7 font-header">
 				Shah's Wedding
 			</div>
+			<div class="col-lg-1 col-md-1"> </div>
 			<div class="Ganpati col-lg-1 col-md-1 col-sm-1 col-xs-1"> </div>
-			
 		</div>
+		<br/>
 		<div class="row bookDiv">
-			<div class="col-lg-1 col-md-1"></div>
-			<a id="SA" href="javascript:void(0)" >
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 "></div>
+			<a class="SA" href="javascript:void(0)" >
 				<div class="bookpage_right col-lg-5 col-md-5"> </div>
 			</a>
-			<div class="col-lg-1 col-md-1"></div>
-			<a id="PA" href="javascript:void(0)">
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"></div>
+			<a class="PA" href="javascript:void(0)">
 				<div class="right col-lg-5 col-md-5"></div>
 			</a>
 		</div>
-		<div class="container">
 		<div class="row namesDiv">
-			
-			<div class="col-lg-4 col-md-4 names textStyle ">Palak weds Ankur</div>
-			<div class="col-lg-4 col-md-4"> </div>
-			<div class="col-lg-4 col-md-4 names textStyle" style="margin-left: 70%">Akhil weds Shivani</div>
+			<div class="col-lg-1 col-md-1  col-xs-1 col-sm-1"> </div>
+			<a class="PA" href="javascript:void(0)" >
+				<div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 names textStyle ">Palak weds Ankur</div>
+		    </a>
+			<div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"> </div>
+			<a class="SA" href="ShivaniAkhil.html">
+				<div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 names textStyle">Akhil weds Shivani</div>
+		    </a>
 		</div>
-
-	</div>
 	</div>
 <script type="text/javascript">
     setTimeout(function() { 
-    	var PA=document.getElementById('PA');
-    	var SA=document.getElementById('SA');
-    	PA.setAttribute("href", "PalakAnkur.html");
-    	SA.setAttribute("href", "ShivaniAkhil.html");
+    	var PA=document.getElementsByClassName('PA');
+    	var SA=document.getElementsByClassName('SA');
+    	PA[0].setAttribute("href", "PalakAnkur.html");
+    	PA[1].setAttribute("href", "PalakAnkur.html");
+    	SA[0].setAttribute("href", "ShivaniAkhil.html");
+    	SA[1].setAttribute("href", "ShivaniAkhil.html");
     	 }, 6000);
 </script>
 </body>
