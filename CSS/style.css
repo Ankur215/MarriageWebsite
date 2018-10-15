@@ -29,13 +29,6 @@ body{
     height: 40px ;
   }
 }
-
-
-/*.thankImg {
-    background-position: 0% 75vh !important; 
-    background-image: url(../image/couple2.jpg) !important;
-}*/
-
 .header {
     background-color: #777;
     color: white;
@@ -94,9 +87,7 @@ img {
 #home, #Couple{
 	height: auto;
 	margin-top: 94px;
-	
 	position: relative;
-	/*border:1px dotted blue;*/
 	background-color: #f4f4f4;
 }
 .name{
@@ -209,10 +200,9 @@ img {
     background-size: cover;
 }
 .counterDiv {
-    top: 24px !important;
-    left: 0px;
+    top: 0 !important;
     height: 135px;
-    width: 135px;
+    width: 135px !important;
     border: 8px dotted white;
     border-radius: 50%;
     background: #f9667e;
@@ -238,13 +228,13 @@ img {
     float: left;
     margin-right: 10px;
 }
-@media (max-width: 1199px) {
+/*@media (max-width: 1199px) {
 .featured img, .featured-right .featured img {
     float: none;
     margin: auto;
 }
 }
-
+*/
 .featured img {
     margin: 0px;
     float: right;
@@ -328,19 +318,11 @@ ul.names li {
     background: transparent;
     border: 3px solid #ededed;
 }
-.timeline {
-    list-style: none;
-    padding: 20px 0 20px;
-    position: relative;
-}
+
 .timeline > li:first-child {
     margin-top: -27px;
 }
-.timeline > li:first-child > .timeline-badge {
-    position: absolute;
-    top: 1%;
-    left: 50%;
-}
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -450,8 +432,7 @@ canvas {
     vertical-align: baseline;
 }
 .time_circles > div {
-    position: absolute;
-    text-align: center;
+        text-align: center;
     color: white;
 }
 .fright {

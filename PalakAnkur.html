@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="Lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
@@ -27,11 +27,11 @@
         </li>
         <div class="hidden-lg hidden-md col-sm-2 col-xs-2"></div>
         <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-          <a id="menuBar" href="#Gallery">Gallery</a>
+          <a id="menuBar" href="#gallery">Gallery</a>
         </li>
         <div class="hidden-lg hidden-md col-sm-2 col-xs-2"></div>
         <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-          <a id="menuBar" href="#Featured People">People</a>
+          <a id="menuBar" href="#featured-people">People</a>
         </li>
       </ul>   
   </div>
@@ -78,7 +78,7 @@
 
 <section id="our-story" class="row">
   <div class="row">
-    <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 text-center">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
       <div class="title-block">
         <h1>Our <span><em>Story</em></span></h1>
             <div class="divider"></div>
@@ -208,101 +208,100 @@
     </div>
   </div>
 </section> 
-<section id="counter" class="img-bg-3" data-stellar-background-ratio="0.5">
-    <div class="row">
+<section id="counter" class="img-bg-3 row">
       <div class="text-center" style="color:white">
         <h2 style="color: white;">Counting the minutes for the big day!</h2>Countdown
-        <div class="countdown">
+        <div class="countdown row">
             <div class="time_circles">
-                <canvas width="720" height="180"></canvas>
-                <div class="col-lg-2"></div>
-                <div class="textDiv_Days counterDiv col-lg-2" style="top: 63px;">
+                <canvas> </canvas>
+                <div class="hidden-lg hidden-md col-sm-3 col-xs-3"></div>
+                <div class="textDiv_Days counterDiv col-lg-2 col-md-2 col-sm-6 col-xs-6" style="top: 63px;">
                     <h4 class="counterH4" style="font-size: 13px; line-height: 13px;">Days
                     </h4>
                     <span id="days" style="font-size: 38px; line-height: 13px;">DD</span>
                 </div>
-                <div class="textDiv_Hours counterDiv col-lg-2" style="top: 63px;">
+                <div class="col-lg-1 col-md-1 col-sm-11 col-xs-11"></div>
+                <div class="textDiv_Hours counterDiv col-lg-2 col-md-2 col-sm-6 col-xs-6" style="top: 63px;">
                     <h4 class="counterH4" style="font-size: 13px; line-height: 13px;">Hours
                     </h4>
                     <span id="hours" style="font-size: 38px; line-height: 13px;">HH</span>
                 </div>
-                <div class="textDiv_Minutes counterDiv col-lg-2" style="top: 63px;">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="textDiv_Minutes counterDiv col-lg-2 col-md-2 col-sm-2 col-xs-2" style="top: 63px;">
                     <h4 class="counterH4" style="font-size: 13px; line-height: 13px;">Minutes</h4>
                     <span id="minutes" style="font-size: 38px; line-height: 13px;">MM</span>
                 </div>
-                <div class="textDiv_Seconds counterDiv col-lg-2" style="top: 63px;">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="textDiv_Seconds counterDiv col-lg-1 hidden-md col-sm-2 col-xs-2" style="top: 63px;">
                     <h4 class="counterH4" style="font-size: 13px; line-height: 13px;">Seconds</h4>
-                    <span id="seconds" style="font-size: 38px;  line-height: 13px;">S</span>
+                    <span id="seconds" style="font-size: 38px;  line-height: 13px;">SS</span>
                 </div>
             </div>
         </div>
-      </div>
    </div>
 </section>
   
-    <section id="gallery" class="bg-gray-1 row">
-      <div class="row">
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
-          <div class="title-block">
-            <h1>Photo <span><em>Gallery</em></span></h1>
-            <div class="divider"></div>
-            <p><em>Dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</em></p>
-         </div>
-       </div>
+<section id="gallery" class="bg-gray-1 row">
+  <div class="row">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+      <div class="title-block">
+        <h1>Photo <span><em>Gallery</em></span></h1>
+        <div class="divider"></div>
+        <p><em>Dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</em></p>
      </div>
-      <div class="row gallery-popup">
-        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family" style="display: block;">
-          <a href="img/gallery/gallery-image-01.jpg" class="mfp-image" title="Gallery image title">
-            <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-          </a>
-        </div>
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-friends" style="display: block;">
-        <a href="img/gallery/gallery-image-02.jpg" class="mfp-image" title="Gallery image title">
-          <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-        </a>
-      </div>
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family" style="display: block;">
-        <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
-          <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-        </a>
-      </div>
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits" style="display: block;">
-        <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
-         <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-        </a>
-      </div>
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
-        <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
-          <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-        </a>
-      </div>
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
-        <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
-          <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-        </a>
-      </div>
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
-        <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
-          <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-        </a>
-      </div>
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
-        <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
-          <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-        </a>
-      </div>
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
-        <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
-          <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
-        </a>
-      </div>
+   </div>
+ </div>
+  <div class="row gallery-popup">
+    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family" style="display: block;">
+      <a href="img/gallery/gallery-image-01.jpg" class="mfp-image" title="Gallery image title">
+        <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+      </a>
     </div>
-    </section>
-  <div id="Featured People">
-    <section id="featured-people">
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-friends" style="display: block;">
+    <a href="img/gallery/gallery-image-02.jpg" class="mfp-image" title="Gallery image title">
+      <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+    </a>
+  </div>
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family" style="display: block;">
+    <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
+      <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+    </a>
+  </div>
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits" style="display: block;">
+    <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
+     <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+    </a>
+  </div>
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
+    <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
+      <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+    </a>
+  </div>
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
+    <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
+      <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+    </a>
+  </div>
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
+    <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
+      <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+    </a>
+  </div>
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
+    <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
+      <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+    </a>
+  </div>
+  <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips" style="display: block;">
+    <a href="image/Pal.png" class="mfp-image" title="Gallery image title">
+      <img src="image/Pal.png" class="img-responsive" alt="Gallery image">
+    </a>
+  </div>
+</div>
+</section>
+    <section id="featured-people" class="row">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                     <div class="title-block">
                         <h1>Featured <span><em>People</em></span></h1>
                         <div class="divider"></div>
@@ -311,7 +310,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="featured">
                         <img src="image/Ankur.jpg" class="img-responsive img-circle" alt="Groom">
                         <div class="text">
@@ -339,7 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xs-12 featured-right">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 featured-right">
                    <div class="featured">
                         <img src="image/Pal.png" class="img-responsive img-circle" alt="Groom">
                         <div class="text">
@@ -367,15 +366,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
-  </div>
+
 
   <section id="footer" class="img-bg-2 thankImg" data-stellar-background-ratio="0.5" style="background-position: 0% 50vh; background-image: url(image/couple2.jpg)">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                     <h1>Thank You!</h1>
                     <ul class="names">
                         <li>Ankur</li>
