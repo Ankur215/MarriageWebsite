@@ -15,11 +15,27 @@ body{
   z-index:998px;
 }
 
-/*@media (min-width: 1200px) {
-.header {
-    width: 81.33%;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px){
+    .img-bg-3, body, .img-bg-2  {
+    background-size: contain !important;
 }
+.thankImg {
+    background-position: 0% 75vh !important;
+  }
+  .counterDiv {
+    width:40px !important;
+    height: 40px ;
+  }
+}
+
+
+/*.thankImg {
+    background-position: 0% 75vh !important; 
+    background-image: url(../image/couple2.jpg) !important;
 }*/
+
 .header {
     background-color: #777;
     color: white;
@@ -196,7 +212,7 @@ img {
     top: 24px !important;
     left: 0px;
     height: 135px;
-    width: 135px !important;
+    width: 135px;
     border: 8px dotted white;
     border-radius: 50%;
     background: #f9667e;
@@ -352,7 +368,7 @@ ul.names li {
     padding: 20px 20px 50px 20px;
     position: relative;
     background: transparent;
-    border: 3px solid #ededed;
+    border: 3px solid #f9667e;
 }
 
 .timeline > li > .timeline-panel::before {
@@ -361,8 +377,8 @@ ul.names li {
     right: -18px;
     display: inline-block;
     border-top: 17px solid transparent;
-    border-left: 17px solid #e8e8e8;
-    border-right: 0 solid #e8e8e8;
+    border-left: 17px solid #f9667e;
+    border-right: 0 solid #f9667e;
     border-bottom: 18px solid transparent;
     content: " ";
 }
@@ -427,6 +443,7 @@ ul.names li {
     position: relative;
     width: 100%;
     height: 100%;
+    left:20%;
 }
 canvas {
     display: inline-block;
