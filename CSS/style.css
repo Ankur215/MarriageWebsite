@@ -6,11 +6,13 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+
 .sticky {
   position: fixed;
   top: 0;
   
 }
+
 .sticky + .conte {
   z-index:998px;
 }
@@ -21,6 +23,7 @@ body{
     .img-bg-3, body, .img-bg-2  {
     background-size: contain !important;
 }
+
 .thankImg {
     background-position: 0% 75vh !important;
   }
@@ -29,25 +32,29 @@ body{
     height: 40px ;
   }
 }
+
 .header {
     background-color: #777;
     color: white;
     z-index :998;
     position: fixed;
     border:1px solid red;
-    
 }
+
 #myheader {
     z-index: 1200px;
 }
+
 .logo {
     height: 70px;
     border-radius: 27%;
 }
+
 li {
     display: inline;
     color:#777;
 }
+
 .nav-bar{
     list-style: none; 
     font-family: 'Oswald', Verdana, Geneva, sans-serif;
@@ -63,6 +70,7 @@ img {
     max-height: 100%;
     max-width:100%;
 }
+
 #nav{
     font-family: 'Oswald', Verdana, Geneva, sans-serif;
     font-size: 20px;
@@ -83,13 +91,13 @@ img {
     height: 30px;
 }
 
-
 #home, #Couple{
 	height: auto;
 	margin-top: 94px;
 	position: relative;
 	background-color: #f4f4f4;
 }
+
 .name{
 	color: #f9667e;
 }
@@ -99,11 +107,12 @@ img {
 	border: 20px solid #FFF;
 }
 .img-res{
-	    display: block;
-	    width: 363px;
-	    height: 363px;
-   		max-width: 100%;
+    display: block;
+    width: 363px;
+    height: 363px;
+	max-width: 100%;
 }
+
 .img-responsive {
     display: block;
     max-width: 100%;
@@ -119,6 +128,7 @@ img {
 	height: 500px;
 	
 }
+
 .social-icons {
     margin: 27px auto;
 }
@@ -141,11 +151,13 @@ img {
     border: 4px solid #7b7571;
     background: #7b7571;
 }
+
 .social-icons a:hover, a:active, .quoteColor, #menuBar:hover, h1 span{
     color: #f9667e;
     text-decoration: none;
 }
-.img-bg-2{
+
+.img-bg-2 {
 	background-image: url("../image/couple.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -154,21 +166,25 @@ img {
     height: 300px;
 }
 
-.couple-title{
+.couple-title {
 	font-size: 53px;
 }
+
 .title-block {
     margin: 0px auto 70px auto;
     text-align: center;
- }
- .title-block p{
+}
+
+.title-block p {
  	font-size: 18px;
- }
- .timeline {
+}
+
+.timeline {
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
 }
+
 .timeline::before {
     top: 0;
     bottom: 0;
@@ -179,9 +195,11 @@ img {
     left: 50%;
     margin-left: -1.5px;
 }
+
 .timeline > li::first-child {
     margin-top: -27px;
 }
+
 .timeline > li:before, .timeline > li:after {
     content: " ";
     display: table;
@@ -190,6 +208,7 @@ img {
 .bg-gray-1 {
     background-color: #f4f4f4;
 }
+
 .title-block .divider {
     border-bottom: solid 2px #f9667e;
 }
@@ -199,6 +218,7 @@ img {
     background-attachment: fixed;
     background-size: cover;
 }
+
 .counterDiv {
     top: 0 !important;
     height: 135px;
@@ -217,13 +237,16 @@ img {
 .gallery_product {
     margin-bottom: 30px;
 }
+
 .featured, .featured-right .featured {
     text-align: center;
 }
+
 .featured img, .featured-right .featured img {
     float: none;
     margin: auto;
 }
+
 .featured-right .featured img {
     float: left;
     margin-right: 10px;
@@ -244,17 +267,20 @@ img {
 }
 
 @media (max-width: 1199px){
-.featured img, .featured-right .featured img {
-    float: none;
-    margin: auto;
+    .featured img, .featured-right .featured img {
+        float: none;
+        margin: auto;
+    }
 }
-}
+
 .img-bg-5{
 	background: url("image/couple.jpg") no-repeat; 
 }
+
 section#footer ul.names {
     font-size: 43px;
 }
+
 ul.names {
     list-style: none;
     display: inline;
@@ -262,6 +288,7 @@ ul.names {
     font-weight: 300;
     padding: 0px;
 }
+
 section#footer .circle {
     width: 64px;
     height: 64px;
@@ -269,12 +296,15 @@ section#footer .circle {
     line-height: 1.5em;
     top: 0px;
 }
+
 .circle{
     background: #f9667e;
 }
+
 ul.names li {
     display: inline-block;
 }
+
 .circle {
     background: #F9667E;
     width: 100px;
@@ -289,26 +319,32 @@ ul.names li {
     top: -15px;
     position: relative;
 }
+
 .title-block {
     margin: 0px auto 70px auto;
     text-align: center;
 }
+
 .title-block h1 {
     font-size: 53px;
 }
+
 .title-block p {
     font-size: 18px;
 }
+
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
 }
+
 .timeline > li:first-child > .timeline-badge {
     position: absolute;
     top: 1%;
     left: 50%;
 }
+
 .timeline > li > .timeline-panel {
     width: 46%;
     float: left;
@@ -331,9 +367,11 @@ ul.names li {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .fa-heart::before {
     content: "\f004";
 }
+
 .text-center {
     text-align: center;
 }
@@ -343,6 +381,7 @@ ul.names li {
     top: 2%;
     left: 50%;
 }
+
 .timeline > li > .timeline-panel {
     width: 46%;
     float: left;
@@ -364,25 +403,31 @@ ul.names li {
     border-bottom: 18px solid transparent;
     content: " ";
 }
+
 .timeline > li .timeline-heading .timeline-title {
     text-align: right;
 }
+
 .timeline > li.timeline-inverted .timeline-heading .timeline-title {
     text-align: left;
 }
+
 .timeline > li {
     margin-top: -25%;
 }
+
 .timeline > li {
     margin-bottom: 20px;
     position: relative;
 }
+
 .timeline > li.timeline-inverted > .timeline-panel::before {
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
     right: auto;
 }
+
 .timeline > li > .timeline-badge {
     color: #fff;
     width: 50px;
@@ -401,19 +446,24 @@ ul.names li {
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
 }
+
  .timeline > li > .timeline-end > .timeline-badge {
     background-color: #f9667e;
 }
+
 .final-frase {
     font-size: 28px;
     margin-top: 20px;
 }
+
 .timeline-body img {
     margin: 30px auto;
 }
+
 #ajaxForm input[type="checkbox"] {
     display: none;
 }
+
 #ajaxForm label.checkbox-button {
     font-family: 'Oswald', Verdana, Geneva, sans-serif;
     font-size: 23px;
@@ -421,23 +471,28 @@ ul.names li {
     font-weight: normal;
     color:#f9667e;
 }
+
 .time_circles {
     position: relative;
     width: 100%;
     height: 100%;
     left:20%;
 }
+
 canvas {
     display: inline-block;
     vertical-align: baseline;
 }
+
 .time_circles > div {
         text-align: center;
     color: white;
 }
+
 .fright {
     float: right !important;
 }
+
 .timeline::before {
     top: 0;
     bottom: 0;
@@ -448,6 +503,7 @@ canvas {
     left: 50%;
     margin-left: -1.5px;
 }
+
 .time_circles > div > span {
     display: block;
     width: 100%;
@@ -457,6 +513,7 @@ canvas {
     margin-top: 0.4em;
     font-weight: bold;
 }
+
 .time_circles > div > h4 {
     margin: 0px;
     padding: 0px;
