@@ -135,12 +135,12 @@
 	60% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/couple2.jpg');
+		background-image:url('../image/couple2.jpeg');
 	}
 	100% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/couple2.jpg');
+		background-image:url('../image/couple2.jpeg');
 		border-left: 5px dotted black;
 	}
 }
@@ -187,3 +187,4 @@
 		opacity: 1; 
 	}
 }
+  
