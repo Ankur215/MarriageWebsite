@@ -135,25 +135,28 @@
 	60% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/couple2.jpg');
+		background-image:url('../image/couple2.jpeg');
 	}
 	100% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/couple2.jpg');
+		background-image:url('../image/couple2.jpeg');
 		border-left: 5px dotted black;
 	}
 }
+
 .logo {
     height: 70px;
     border: 0px solid black;
     border-radius: 27%;
 }
+
 .img-rounded {
 	max-height: 100%;
 	max-width:100%;
     border-radius: 27%;
 }
+
 .Ganpati {
     height: 100px;
     width: 100px;
@@ -184,3 +187,4 @@
 		opacity: 1; 
 	}
 }
+  
