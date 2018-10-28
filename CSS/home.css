@@ -77,7 +77,7 @@
 	margin-top: -32px;
 	border-top-right-radius: 5%;
 	border-bottom-right-radius: 5%;
-	animation: fadein 6s 1 linear;
+	animation: fadein 6s 0 linear;
 	animation-delay: 3s;
 	animation-fill-mode: forwards;
 	border-left: 5px dotted  black;
@@ -109,7 +109,7 @@
 .leftpage {
 	background-image: url(../image/4.jpeg);
 	transform-origin: 0% 50%;
-	animation: flip 6s 1 linear;
+	animation: flip 6s 0 linear;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
