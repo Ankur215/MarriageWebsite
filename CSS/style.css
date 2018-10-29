@@ -2,7 +2,7 @@ body{
     background-repeat: no-repeat;
     color: black;/* #7b7571;*/
     border: 12px dotted #f9667e;
-    /*background: url(../image/palkur.jpg);*/
+    background: url(../image/palkur1.jpeg);
     background-attachment: fixed;
     background-size: cover;
     /*max-width: 100%;
@@ -13,6 +13,10 @@ body{
   position: fixed;
   top: 0;
   
+}
+
+.greybackground {
+    background-color: #f4f4f4;
 }
 .sticky + .conte {
   z-index:998px;
@@ -25,6 +29,9 @@ body{
     background-size: contain !important;
 }
 
+.mobileview {
+    margin-top: 73px !important;
+}
 .thankImg {
     background-position: 0% 75vh !important;
   }
@@ -40,25 +47,20 @@ body{
     z-index :998;
 /*    position: relative;*/
     position: fixed;
-    border:1px solid red;
 }
 
 #myheader {
     z-index: 1200px;
 }
 
-.logo {
-    height: 40px;
-    border-radius: 27%;
-    margin-top: -13px;
-}
+
 
 li {
     display: inline;
     color: black; /*#777;*/
 }
 
-.nav-bar{
+.nav-bar {
     list-style: none; 
     font-family: 'Oswald', Verdana, Geneva, sans-serif;
     font-size: 15px;
@@ -78,7 +80,7 @@ img {
     font-family: 'Oswald', Verdana, Geneva, sans-serif;
     font-size: 20px;
     display: inline;
-    margin-top: 30px;
+    margin-top: 16px;
     float: right;
 }
 
@@ -109,6 +111,11 @@ img {
 	border-radius: 50%;
 	border: 20px solid #FFF;
 }
+
+.img-size {
+    height: 200px !important;
+    width: 200px !important;
+}
 .img-res{
     display: block;
     width: 363px;
@@ -120,6 +127,11 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+.logo {
+    height: 40px;
+    border-radius: 27%;
+    margin-top: -13px;
 }
 
 .profile img{
@@ -154,6 +166,8 @@ img {
     border: 4px solid black;/* #7b7571;*/
     background: black;/* #7b7571;*/
 }
+
+
 
 .social-icons a:hover, a:active, .quoteColor, #menuBar:hover, h1 span{
     color: #f9667e;
@@ -217,7 +231,7 @@ img {
 }
 
 .img-bg-3 {
-    background-image: url("../image/couple/3.jpeg");
+    background-image: url("../image/palkur2.jpeg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -243,6 +257,7 @@ img {
 
 .featured, .featured-right .featured {
     text-align: center;
+    margin-top: 35px;
 }
 
 .featured img, .featured-right .featured img {
@@ -362,6 +377,12 @@ ul.names li {
     margin-top: -27px;
 }
 
+.familyMemberNames {
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: -13px;
+}
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -373,6 +394,14 @@ ul.names li {
 
 .fa-heart::before {
     content: "\f004";
+}
+
+.text {
+    height: 20%;
+    width: 70%;
+    background-color: #f4f4f4;
+    margin-top: 35px;
+    margin-left:85px;
 }
 
 .text-center {
@@ -479,7 +508,7 @@ ul.names li {
     position: relative;
     width: 100%;
     height: 100%;
-    left:20%;
+    left: 16%;
     /*width: 640px;
     height: auto;
     margin: 0 auto;
@@ -550,6 +579,15 @@ canvas {
   background-color: #ddd;
   color: black;
 }*/
+@media screen and (max-width: 1200px) {
+    .mobileview {
+        margin-top: 73px !important;
+    }
+
+    .logo {
+        margin-top: 0 !important;
+    }
+}
 
 .active {
   background-color: #4CAF50;
@@ -560,7 +598,9 @@ canvas {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -568,7 +608,9 @@ canvas {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
