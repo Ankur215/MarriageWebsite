@@ -109,7 +109,7 @@
 .leftpage {
 	background-image: url(../image/4.jpeg);
 	transform-origin: 0% 50%;
-	animation: flip 6s 0 linear;
+	animation: flip 6s 1 linear;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
