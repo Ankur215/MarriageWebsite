@@ -109,7 +109,7 @@
 .leftpage {
 	background-image: url(../image/4.jpeg);
 	transform-origin: 0% 50%;
-	animation: flip 6s 1 linear;
+	animation: flip 6s 0 linear;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
@@ -191,10 +191,22 @@
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px) {
+
+  	.rightpage, .leftpage {
+  		height: 50%;
+  		width: 48%;
+  	}
+  	.bookDiv {
+  		margin-top: 11%;
+  	}
+  	.namesDiv {
+    	margin-top: -17%;
+    }
   	
   	.leftpage {
-	background-image: url(../image/444.png) ;
+	background-image: url(../image/3223.png) ;
 	transform-origin: 0% 50%;
+    background-position-x: -7vh;
 	animation: flip1 6s 1 linear;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -208,34 +220,39 @@
 		rotateY( -0deg );
 	}
 	20% {
-		background-image: url('../image/4.jpeg');
+		background-image: url('../image/3223.png');
 	}
 	30% { 
 		transform: perspective( 1500px )
 		rotateY( -90deg );
-		background-image: url('../image/4.jpeg');
+		background-image: url('../image/3223.png');
 	}
 	50% {
 		opacity:0.5;
 	}
 	60% {
-		
-		background-image:url('../image/115.png');
+		background-image:url('../image/114.png');
 	}
 	100% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/116.png');
+		background-image:url('../image/114.png');
 		background-position: -5vh 0vh;
 		border-left: 5px dotted black;
 	}
 }
 @keyframes fadein {
+	20% {
+		opacity: 1;
+		background-image: url(../image/117.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 	100% {
 		opacity: 1;
 		background-image: url(../image/117.png);
 		background-size: cover;
-		background-position: -8vh;
+		background-position: -5vh;
 		background-repeat: no-repeat;
 		/*transform: skewY(20deg);*/
 	}
