@@ -1,8 +1,13 @@
 .textStyle {
-    font-size: 238%;
+    font-size: 160%;
     font-family: cursive;
     font-weight: 700;
     text-decoration: underline;
+}
+
+.cutomize-btn {
+	color: #f9667e;
+	background-color: #f4f4f4;
 }
 
 .headerDiv, .namesDiv {
@@ -17,7 +22,6 @@
 
 .names {
 	animation-delay: 6s;
-	color: black;
 	opacity: 0%;
 	animation: name 6s 1 linear;
     animation-fill-mode: forwards;
@@ -38,6 +42,29 @@
    	}
 }
 
+
+.blink {
+	font-size: 130%;
+    color: #f4f4f4;
+    font-weight: 500;
+	opacity: 0%;
+	animation-delay: 3s;
+	/*animation: move 5s infinite;*/
+	animation: move 3s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+	0% { 
+		opacity: 0; 
+	}
+	50% { 
+		opacity: 0.5; 
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .font-header {
 	color: lightgoldenrodyellow;
     font-size: 48px;
@@ -93,13 +120,13 @@
 	}
 	20% {
 		opacity: 1;
-		background-image: url(../image/couple.jpg);
+		background-image: url(../image/sacouple.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	100% {
 		opacity: 1;
-		background-image: url(../image/couple.jpg);
+		background-image: url(../image/sacouple.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 
@@ -107,10 +134,11 @@
 }
 
 .leftpage {
-	background-image: url(../image/4.jpeg);
+	background-image: url(../image/1234.jpg);
 	transform-origin: 0% 50%;
 	animation: flip 6s 1 linear;
 	background-size: cover;
+	background-position-y: -4vh;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
 	animation-delay: 3s;
@@ -135,12 +163,12 @@
 	60% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/couple2.jpeg');
+		background-image:url('../image/115.png');
 	}
 	100% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/couple2.jpeg');
+		background-image:url('../image/115.png');
 		border-left: 5px dotted black;
 	}
 }
@@ -195,6 +223,7 @@
   	.rightpage, .leftpage {
   		height: 50%;
   		width: 48%;
+  		background-position-x: -3vh;
   	}
   	.bookDiv {
   		margin-top: 11%;
@@ -206,54 +235,13 @@
   	.leftpage {
 	background-image: url(../image/3223.png) ;
 	transform-origin: 0% 50%;
-    background-position-x: -7vh;
-	animation: flip1 6s 1 linear;
+   	background-position-y: 0;
+   	background-position-x: -5vh;
+	animation: flip 6s 1 linear;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
 	animation-delay: 3s;
 	animation-fill-mode: forwards;
 	} 
-	@keyframes flip1 {
-	0% {
-		transform: perspective( 600px )
-		rotateY( -0deg );
-	}
-	20% {
-		background-image: url('../image/3223.png');
-	}
-	30% { 
-		transform: perspective( 1500px )
-		rotateY( -90deg );
-		background-image: url('../image/3223.png');
-	}
-	50% {
-		opacity:0.5;
-	}
-	60% {
-		background-image:url('../image/114.png');
-	}
-	100% {
-		transform: perspective( 1500px )
-		rotateY( -180deg );
-		background-image:url('../image/114.png');
-		background-position: -5vh 0vh;
-		border-left: 5px dotted black;
-	}
-}
-@keyframes fadein {
-	20% {
-		opacity: 1;
-		background-image: url(../image/117.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	100% {
-		opacity: 1;
-		background-image: url(../image/117.png);
-		background-size: cover;
-		background-position: -5vh;
-		background-repeat: no-repeat;
-		/*transform: skewY(20deg);*/
-	}
 }
