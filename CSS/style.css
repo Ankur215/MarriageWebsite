@@ -1,23 +1,25 @@
-.palkurBody{
+.palkurBody {
     background-repeat: no-repeat;
     color: black;/* #7b7571;*/
     border: 12px dotted #f9667e;
     background: url(../image/palkur1.jpeg) ;
     background-attachment: fixed;
     background-size: cover;
-    /*max-width: 100%;
-    overflow: hidden;*/
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .shikhilBody{
     background-repeat: no-repeat;
     color: black;/* #7b7571;*/
     border: 12px dotted #f9667e;
-    background: url(../image/shivkhil.jpg);
-    background-attachment: fixed;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.shivkhilfm {
     background-size: cover;
-    /*max-width: 100%;
-    overflow: hidden;*/
+    background-image: url(../image/shivkhil2.jpg);
 }
 
 .sticky {
@@ -43,8 +45,19 @@
 .mobileview {
     margin-top: 73px !important;
 }
+
+ #featured-people{
+    background-color: #f4f4f4;
+}
+
+#family {
+    color: black !important;
+}
 .thankImg {
     background-position: 0% 75vh !important;
+  }
+  .text {
+    margin-left: 50px !important; 
   }
   .counterDiv {
     width:40px !important;
@@ -292,7 +305,7 @@ img {
 }
 */
 .featured img {
-    margin: 0px;
+    margin-top: -1px;
     float: right;
     width: 200px;
     /*border: 10px solid #FFF!important;*/
