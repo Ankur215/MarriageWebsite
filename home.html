@@ -3,10 +3,8 @@
 	<head>
 		<title>Shah's Marriage</title>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="Lib/bootstrap.min.css">
-  <link rel="shortcut icon" type="image/png" href="image/fav/favicon.png"/>
-  <link rel="shortcut icon" type="image/png" href="image/fav/favicon.png"/>
+  		<link rel="stylesheet" type="text/css" href="Lib/bootstrap.min.css">
+  		<link rel="shortcut icon" type="image/png" href="image/fav/favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="CSS/home.css">
 	</head>
 <body>
@@ -15,21 +13,21 @@
 			<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
 			<p class="logo col-lg-4 col-md-4 col-sm-2 col-xs-2">
 				<a href="home.html">
-					<img src="image/a1.png" class="img-rounded"> 
+					<img src="image/logo.jpg" class="img-rounded"> 
 				</a>
 			</p>
-			<div class="hidden-lg hidden-md col-sm-2 col-xs-1"></div>
-			<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 font-header">
+			<div class="hidden-lg hidden-md col-sm-2 hidden-xs"></div>
+			<div class="col-lg-5 col-md-5 col-sm-6 col-xs-7 font-header">
 				Shah's Wedding
 			</div>
 			<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"> </div>
-			<div class="Ganpati col-lg-1 col-md-1 col-sm-1 col-xs-4"> </div>
+			<div class="Ganpati col-lg-1 col-md-1 col-sm-1 col-xs-3"> </div>
 		</div>
 		<br/>
 		<div class="row">
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-			<div class="col-lg-6 col-md-6 col-sm-5 col-xs-6 blink">click on a photo</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 blink">click on a photo</div>
+			<div id="clickPA" class="col-lg-6 col-md-6 col-sm-5 col-xs-6"></div>
+			<div id="clickSA" class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 		</div>
 		<br>
 		<div class="row bookDiv">
@@ -49,20 +47,22 @@
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 				<a class="PA" href="javascript:void(0)" >
 				<button class="cutomize-btn names textStyle"> Ankur Weds Palak</button>
-				<!-- <div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 names textStyle ">Palak weds Ankur</div> -->
 		    </a></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 				<a class="SA" href="javascript:void(0)" >
 				<button class="cutomize-btn names textStyle"> Akhil Weds Shivani</button>
-				<!-- <div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 names textStyle ">Palak weds Ankur</div> -->
 		    </a>
-			<!-- <button class="col-lg-4 col-md-4 col-sm-6 col-xs-6 names textStyle custmize-btn"><a class="SA" href="javascript:void(0)">
-				<div >Click to visit:Akhil weds Shivani</div></button> 
-		    </a>-->
 		  </div>
 	</div>
 	<script type="text/javascript">
 	    setTimeout(function() { 
+	    	var clickSA = document.getElementById('clickSA');
+	    	clickSA.className += ' blink';
+	    	clickSA.innerHTML = "click on a photo";
+
+	    	var clickPA = document.getElementById('clickPA');
+	    	clickPA.className += ' blink';
+	    	clickPA.innerHTML = "click on a photo";
 	    	var PA=document.getElementsByClassName('PA');
 	    	var SA=document.getElementsByClassName('SA');
 	    	PA[0].setAttribute("href", "PalakAnkur.html");

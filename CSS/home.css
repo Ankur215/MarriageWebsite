@@ -48,8 +48,6 @@
     color: #f4f4f4;
     font-weight: 500;
 	opacity: 0%;
-	animation-delay: 3s;
-	/*animation: move 5s infinite;*/
 	animation: move 3s infinite linear;
     animation-fill-mode: forwards;
 }
@@ -85,7 +83,7 @@
   margin-top: 1%;
   height:97vh;
   border-radius: 4%;
-  background-image:url('../image/b17.png');
+  background-image:url('../image/backgroundImage.png');
   background-repeat: no-repeat;
   background-size: cover;
   border:12px solid #f9667e;
@@ -113,20 +111,20 @@
 @keyframes fadein {
 	1% {
 		opacity: 1;
-		background-image: url(../image/4.jpeg);
+		background-image: url(../image/bookcover.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		/*transform: skewY(20deg);*/
 	}
 	20% {
 		opacity: 1;
-		background-image: url(../image/sacouple.png);
+		background-image: url(../image/sacouple.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	100% {
 		opacity: 1;
-		background-image: url(../image/sacouple.png);
+		background-image: url(../image/sacouple.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 
@@ -134,7 +132,7 @@
 }
 
 .leftpage {
-	background-image: url(../image/1234.jpg);
+	background-image: url(../image/bookcover.jpg);
 	transform-origin: 0% 50%;
 	animation: flip 6s 1 linear;
 	background-size: cover;
@@ -150,12 +148,12 @@
 		rotateY( -0deg );
 	}
 	20% {
-		background-image: url('../image/4.jpeg');
+		background-image: url('../image/bookcover.jpg');
 	}
 	30% { 
 		transform: perspective( 1500px )
 		rotateY( -90deg );
-		background-image: url('../image/4.jpeg');
+		background-image: url('../image/bookcover.jpg');
 	}
 	50% {
 		opacity:0.5;
@@ -163,12 +161,12 @@
 	60% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/115.png');
+		background-image:url('../image/pacouple.jpg');
 	}
 	100% {
 		transform: perspective( 1500px )
 		rotateY( -180deg );
-		background-image:url('../image/115.png');
+		background-image:url('../image/pacouple.jpg');
 		border-left: 5px dotted black;
 	}
 }
@@ -189,7 +187,7 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-image:url('../image/Ganpati.png');
+    background-image:url('../image/Ganpati.jpg');
 	background-size: cover;
 	opacity: 0;
 	background-repeat: no-repeat;
@@ -233,15 +231,43 @@
     }
   	
   	.leftpage {
-	background-image: url(../image/3223.png) ;
+	background-image: url(../image/mobilecover.jpg) ;
 	transform-origin: 0% 50%;
    	background-position-y: 0;
    	background-position-x: -5vh;
-	animation: flip 6s 1 linear;
+	animation: flip1 6s 1 linear;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
 	animation-delay: 3s;
 	animation-fill-mode: forwards;
 	} 
+	@keyframes flip1 {
+	0% {
+		transform: perspective( 600px )
+		rotateY( -0deg );
+	}
+	20% {
+		background-image: url('../image/mobilecover.jpg');
+	}
+	30% { 
+		transform: perspective( 1500px )
+		rotateY( -90deg );
+		background-image: url('../image/mobilecover.jpg');
+	}
+	50% {
+		opacity:0.5;
+	}
+	60% {
+		transform: perspective( 1500px )
+		rotateY( -180deg );
+		background-image:url('../image/pacouplemobile.jpeg');
+	}
+	100% {
+		transform: perspective( 1500px )
+		rotateY( -180deg );
+		background-image:url('../image/pacouplemobile.jpeg');
+		border-left: 5px dotted black;
+	}
+}
 }
