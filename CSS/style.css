@@ -2,7 +2,7 @@
     background-repeat: no-repeat;
     color: black;/* #7b7571;*/
     border: 12px dotted #f9667e;
-    background: url(../image/palkur1.jpeg) ;
+    background: url(../image/AnkurPalak/palkurbackground.jpg) ;
     background-attachment: fixed;
     background-size: cover;
     max-width: 100%;
@@ -19,7 +19,8 @@
 
 .shivkhilfm {
     background-size: cover;
-    background-image: url(../image/shivkhil2.jpg);
+    background-attachment: fixed;
+    background-image: url(../image/AkhilShivani/shivkhilSectionBackground.jpeg);
 }
 
 .sticky {
@@ -69,7 +70,6 @@
     background-color:  black; /*#777;*/
     color: white;
     z-index :998;
-/*    position: relative;*/
     position: fixed;
 }
 
@@ -255,13 +255,13 @@ img {
 }
 
 .img-bg-3 {
-    background-image: url("../image/palkur2.jpeg");
+    background-image: url("../image/AnkurPalak/palkurSectionBackground.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
 
 .img-bg-4 {
-    background-image: url("../image/shivkhil2.jpg");
+    background-image: url("../image/AkhilShivani/shivkhilSectionBackground.jpeg");
 }
 
 .counterDiv {
@@ -297,18 +297,11 @@ img {
     float: left;
     margin-right: 10px;
 }
-/*@media (max-width: 1199px) {
-.featured img, .featured-right .featured img {
-    float: none;
-    margin: auto;
-}
-}
-*/
+
 .featured img {
     margin-top: -1px;
     float: right;
     width: 200px;
-    /*border: 10px solid #FFF!important;*/
     margin-left: 10px;
 }
 
@@ -537,11 +530,6 @@ ul.names li {
     width: 100%;
     height: 100%;
     left: 16%;
-    /*width: 640px;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;*/
 }
 
 canvas {
@@ -590,7 +578,6 @@ canvas {
 
 .topnav {
   overflow: hidden;
-  /*background-color: #333;*/
 }
 
 .topnav a {
@@ -603,10 +590,6 @@ canvas {
   font-size: 17px;
 }
 
-/*.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}*/
 @media screen and (max-width: 1200px) {
     .mobileview {
         margin-top: 73px !important;
