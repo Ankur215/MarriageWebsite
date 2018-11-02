@@ -266,6 +266,7 @@ img {
 
 .img-bg-4 {
     background-image: url("../image/AkhilShivani/shivkhilSectionBackground.jpeg");
+    background-position-y: -12vh;
 }
 
 .counterDiv {
