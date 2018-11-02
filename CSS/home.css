@@ -7,7 +7,7 @@
 
 .cutomize-btn {
 	color: #f9667e;
-	background-color: #f4f4f4;
+	background-color: black;
 }
 
 .headerDiv, .namesDiv {
@@ -221,7 +221,6 @@
   	.rightpage, .leftpage {
   		height: 50%;
   		width: 48%;
-  		background-position-x: -3vh;
   	}
   	.bookDiv {
   		margin-top: 11%;
@@ -234,7 +233,6 @@
 	background-image: url(../image/mobilecover.jpg) ;
 	transform-origin: 0% 50%;
    	background-position-y: 0;
-   	background-position-x: -5vh;
 	animation: flip1 6s 1 linear;
 	background-size: cover;
 	background-repeat: no-repeat;
