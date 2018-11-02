@@ -21,9 +21,9 @@
 }
 
 .names {
-	animation-delay: 6s;
+	animation-delay: 2s;
 	opacity: 0%;
-	animation: name 6s 1 linear;
+	animation: name 4s 1 linear;
     animation-fill-mode: forwards;
 }
 
@@ -45,10 +45,10 @@
 
 .blink {
 	font-size: 130%;
-    color: #f4f4f4;
+    color: #f9667e;
     font-weight: 500;
 	opacity: 0%;
-	animation: move 3s infinite linear;
+	animation: move 2s infinite linear;
     animation-fill-mode: forwards;
 }
 
@@ -57,7 +57,7 @@
 		opacity: 0; 
 	}
 	50% { 
-		opacity: 0.5; 
+		opacity: 0.75; 
 	}
 	100% {
 		opacity: 1;
@@ -102,14 +102,14 @@
 	margin-top: -32px;
 	border-top-right-radius: 5%;
 	border-bottom-right-radius: 5%;
-	animation: fadein 6s 1 linear;
-	animation-delay: 3s;
+	animation: fadein 4s 1 linear;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
 	border-left: 5px dotted  black;
 } 
 
 @keyframes fadein {
-	1% {
+	0% {
 		opacity: 1;
 		background-image: url(../image/bookcover.png);
 		background-size: cover;
@@ -134,12 +134,12 @@
 .leftpage {
 	background-image: url(../image/bookcover.png);
 	transform-origin: 0% 50%;
-	animation: flip 6s 1 linear;
+	animation: flip 4s 1 linear;
 	background-size: cover;
 	background-position-y: -4vh;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
-	animation-delay: 3s;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
 } 
 @keyframes flip {
@@ -191,8 +191,8 @@
 	background-size: cover;
 	opacity: 0;
 	background-repeat: no-repeat;
-    animation: gFadein 6s 1 linear;
-    animation-delay: 3s;
+    animation: gFadein 4s 1 linear;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -221,7 +221,32 @@
   	.rightpage, .leftpage {
   		height: 50%;
   		width: 48%;
+  		animation: fadein1 4s 1 linear;
+  		background-image: url(../image/sacouple.jpg);
   	}
+
+  	@keyframes fadein1 {
+	0% {
+		opacity: 1;
+		background-image: url(../image/mobilecover.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		/*transform: skewY(20deg);*/
+	}
+	20% {
+		opacity: 1;
+		background-image: url(../image/sacouple.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	100% {
+		opacity: 1;
+		background-image: url(../image/sacouple.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+}
   	.bookDiv {
   		margin-top: 11%;
   	}
@@ -233,17 +258,18 @@
 	background-image: url(../image/mobilecover.jpg) ;
 	transform-origin: 0% 50%;
    	background-position-y: 0;
-	animation: flip1 6s 1 linear;
+	animation: flip1 4s 1 linear;
 	background-size: cover;
+	animation-delay: 1.5s;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
-	animation-delay: 3s;
 	animation-fill-mode: forwards;
 	} 
 	@keyframes flip1 {
 	0% {
 		transform: perspective( 600px )
 		rotateY( -0deg );
+		background-image: url('../image/mobilecover.jpg');
 	}
 	20% {
 		background-image: url('../image/mobilecover.jpg');
