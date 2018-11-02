@@ -43,6 +43,10 @@
     background-size: contain !important;
 }
 
+ .shivkhilfm {
+    background-size: contain !important;
+ }
+
 .mobileview {
     margin-top: 73px !important;
 }
@@ -590,7 +594,7 @@ canvas {
   font-size: 17px;
 }
 
-@media screen and (max-width: 1200px) {
+/*@media screen and (max-width: 1200px) {
     .mobileview {
         margin-top: 73px !important;
     }
@@ -617,7 +621,7 @@ canvas {
     float: right;
     display: block;
   }
-}
+}*/
 
 @media only screen 
   and (min-device-width: 320px) 
