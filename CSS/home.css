@@ -48,7 +48,7 @@
     color: #f9667e;
     font-weight: 500;
 	opacity: 0%;
-	animation: move 3s infinite linear;
+	animation: move 2s infinite linear;
     animation-fill-mode: forwards;
 }
 
@@ -57,7 +57,7 @@
 		opacity: 0; 
 	}
 	50% { 
-		opacity: 0.5; 
+		opacity: 0.75; 
 	}
 	100% {
 		opacity: 1;
@@ -221,7 +221,32 @@
   	.rightpage, .leftpage {
   		height: 50%;
   		width: 48%;
+  		animation: fadein1 4s 1 linear;
+  		background-image: url(../image/sacouple.jpg);
   	}
+
+  	@keyframes fadein1 {
+	0% {
+		opacity: 1;
+		background-image: url(../image/mobilecover.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		/*transform: skewY(20deg);*/
+	}
+	20% {
+		opacity: 1;
+		background-image: url(../image/sacouple.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	100% {
+		opacity: 1;
+		background-image: url(../image/sacouple.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+}
   	.bookDiv {
   		margin-top: 11%;
   	}
@@ -235,6 +260,7 @@
    	background-position-y: 0;
 	animation: flip1 4s 1 linear;
 	background-size: cover;
+	animation-delay: 1.5s;
 	background-repeat: no-repeat;
 	transition: opacity 2s ease-in;
 	animation-fill-mode: forwards;
@@ -243,6 +269,7 @@
 	0% {
 		transform: perspective( 600px )
 		rotateY( -0deg );
+		background-image: url('../image/mobilecover.jpg');
 	}
 	20% {
 		background-image: url('../image/mobilecover.jpg');
