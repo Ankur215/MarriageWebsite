@@ -7,7 +7,7 @@
 
 .cutomize-btn {
 	color: #f9667e;
-	background-color: black;
+	background-color: #f4f4f4;
 }
 
 .headerDiv, .namesDiv {
@@ -111,7 +111,7 @@
 @keyframes fadein {
 	1% {
 		opacity: 1;
-		background-image: url(../image/bookcover.jpg);
+		background-image: url(../image/bookcover.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		/*transform: skewY(20deg);*/
@@ -132,7 +132,7 @@
 }
 
 .leftpage {
-	background-image: url(../image/bookcover.jpg);
+	background-image: url(../image/bookcover.png);
 	transform-origin: 0% 50%;
 	animation: flip 6s 1 linear;
 	background-size: cover;
@@ -148,12 +148,12 @@
 		rotateY( -0deg );
 	}
 	20% {
-		background-image: url('../image/bookcover.jpg');
+		background-image: url('../image/bookcover.png');
 	}
 	30% { 
 		transform: perspective( 1500px )
 		rotateY( -90deg );
-		background-image: url('../image/bookcover.jpg');
+		background-image: url('../image/bookcover.png');
 	}
 	50% {
 		opacity:0.5;
