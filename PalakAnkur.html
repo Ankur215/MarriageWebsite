@@ -175,17 +175,16 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
           <form id="ajaxForm" data-toggle="validator" novalidate="true">
             <div class="row greybackground">
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-11  text-center">
-                <input type="checkbox" id="checkbox-2" name="events[]" value="Ceremony">
-                <label for="checkbox-2" class="checkbox-button"><i class="fa fa-circle" aria-hidden="true"></i> Sangeet Sandhya</label>
-                <p style="font-size: 18px;"> <b>22<sup>nd</sup> December, 2018 at 7:00 PM </b> <br/>Shimoni Party Plot<br/>Near Nandalay Haveli<br/>Rajesh Tower Rd, Gotri,<br/> Vadodara, Gujarat 390021<br></p>
+              <div class="col-md-1 col-lg-1 hidden-sm hidden-xs text-center">
               </div>
-              <div class="col-md-4 col-lg-4 col-sm-6 col-xs-11 text-center">
-                <input type="checkbox" id="checkbox-3" name="events[]" value="Party">
+              <div class="col-lg-4 col-md-4 col-sm-5 col-xs-5  text-center">
+                <input type="checkbox" id="checkbox-2" name="events[]" value="Ceremony">
                 <label for="checkbox-3" class="checkbox-button"><i class="fa fa-circle" aria-hidden="true"></i> Wedding</label>
                 <p style="font-size: 18px;"><b>23<sup>rd</sup> December, 2018 at 12:39 PM </b><br>Gokul Party Plot <br> Santam Square, <br/>Sainath Rd, Saiyed Vasna, <br>Vadodara, Gujarat 390015<br></p>
               </div>
-              <div class="col-md-4 col-lg-4 col-sm-6 col-xs-11 text-center">
+              <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 text-center">
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-5 col-xs-5 text-center">
                 <input type="checkbox" id="checkbox-2" name="events[]" value="Ceremony">
                 <label for="checkbox-2" class="checkbox-button"><i class="fa fa-circle" aria-hidden="true"></i> Reception</label>
                 <p style="font-size: 18px;"><b>23<sup>rd</sup> December, 2018 at 7:00 PM </b><br>Gokul Party Plot <br> Santam Square, <br/>Sainath Rd, Saiyed Vasna, <br>Vadodara, Gujarat 390015<br></p>
@@ -404,7 +403,12 @@
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
+      if (days < 0){
+        days = '00';
+        hours = '00';
+        minutes = '00';
+        seconds = '00';
+      }  
     // Output the result in an element with id
     document.getElementById("days").innerHTML = days ;
     document.getElementById("hours").innerHTML = hours ;
